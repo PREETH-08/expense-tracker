@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personal Expense Tracker</h1><nav>
+    <a href="index.html">Home</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="report.html">Reports</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+</nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Balance Section -->
+        <div class="card">
+            <h2>Total Balance</h2>
+            <h3>₹50,000</h3>
+        </div>
+
+        <!-- Income and Expense -->
+        <div class="summary">
+            <div class="income">
+                <h3>Income</h3>
+                <p>₹70,000</p>
+            </div>
+
+            <div class="expense">
+                <h3>Expenses</h3>
+                <p>₹20,000</p>
+            </div>
+        </div>
+
+        <!-- Add Expense Form -->
+        <div class="card">
+            <h2>Add New Expense</h2>
+
+            <form>
+                <input type="text" placeholder="Expense Title" required>
+
+                <input type="number" placeholder="Amount" required>
+
+                <select required>
+                    <option value="">Select Category</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                </select>
+
+                <input type="date" required>
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+
+        <!-- Expense History -->
+        <div class="card">
+            <h2>Expense History</h2>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+
+                <tr>
+                    <td>09-07-2026</td>
+                    <td>Food</td>
+                    <td>₹500</td>
+                </tr>
+
+                <tr>
+                    <td>08-07-2026</td>
+                    <td>Travel</td>
+                    <td>₹1200</td>
+                </tr>
+
+                <tr>
+                    <td>07-07-2026</td>
+                    <td>Shopping</td>
+                    <td>₹2500</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Personal Expense Tracker</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
