@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+.container{
+    width:80%;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2c3e50;
+}
+
+.card h3{
+    color:#27ae60;
+    font-size:30px;
+}
+
+.summary{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+}
+
+.income,
+.expense{
+    width:48%;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    color:white;
+}
+
+.income{
+    background:#27ae60;
+}
+
+.expense{
+    background:#e74c3c;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form select{
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:12px;
+    border:none;
+    background:#3498db;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+table th{
+    background:#2c3e50;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#2c3e50;
+    color:white;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    .summary{
+        flex-direction:column;
+    }
+
+    .income,
+    .expense{
+        width:100%;
+        margin-bottom:15px;
+    }
+}
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:15px;
+    resize:none;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
